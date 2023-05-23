@@ -2,37 +2,193 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.id-card,
+.facebook-card {
+  width: 800px;
+  margin: 20px auto;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid black;
+}
+.id-card-body,
+.facebook-card-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+}
+.id-card-body p {
+  margin: 5px;
+}
+
+.greetings-div,
+.random-div,
+.box-color-div {
+  border: 2px solid black;
+  margin: 5px auto;
+  width: 800px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.box-color-div {
+  height: 100px;
+  text-align: center;
+}
+
+.credit-card-container {
+  display: flex;
+  width: 1000px;
+  margin: 10px auto;
+  justify-content: space-around;
+}
+.credit-card {
+  width: 280px;
+  height: 150px;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.credit-card img {
+  width: 50px;
+  height: 30px;
+  align-self: flex-end;
+}
+.card-number {
+  font-size: 1.5em;
+  margin: 0
+}
+.bank-info {
+  font-size: 0.9em;
+  margin: 0;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.bank-info p {
+  margin: 0;
+  align-self: flex-start;
+}
+.bank-info-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.drivers-license {
+  display: flex;
+  background-color: #455EB5;
   color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin: 10px auto;
+  width: 800px;
+  border-radius: 10px;
+}
+.drivers-license img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.driver-info {
+  text-align: left;
+}
+.driver-info p,
+.driver-info h3 {
+  margin: 5px;
+}
+.driver-info-stars {
+  font-size: 1.6em;
+}
+.driver-info h3  {
+  font-size: 1.5em;
 }
 
-.App-link {
-  color: #61dafb;
+.like-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.like-btn {
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+.clickable-picture {
+  
+  margin: 20px auto;
+}
+.clickable-picture img,
+.dice-container img {
+  width: 200px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel {
+  display: flex;
+  width: 250px;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel img {
+  border: 5px solid lightgrey;
+  border-radius: 20px;
+}
+.carousel button {
+  border: 5px solid lightgrey;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.square-numbers-container {
+  display: flex;
+  width: 500px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+.square-numbers {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7em;
+}
+
+.facebook-card img {
+  width: 150px;
+}
+.facebook-card-body p{
+  margin: 5px;
+  font-size: 1.5em;
+}
+
+.country-btn-container {
+  width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.country-btn-container button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+.country-btn-container button:hover {
+  background-color:lightgray;
 }
